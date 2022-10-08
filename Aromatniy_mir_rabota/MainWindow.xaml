@@ -1,0 +1,30 @@
+﻿<Window x:Class="Aromatniy_mir_rabota.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aromatniy_mir_rabota"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" Icon="Visual_res/icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"></RowDefinition>
+            <RowDefinition Height="0.6*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.8*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Source="Visual_res/logo.png" />
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="35" />
+
+        <TextBox Grid.Column="1" Grid.Row="1" Text="Логин" Name="Login" FontFamily="Comic Sans MS" FontSize="25" Background="#FFFFCC99" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="Пароль" Name="Pass"  FontFamily="Comic Sans MS" FontSize="25" Background="#FFFFCC99" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200"/>
+        <Button  Grid.Column="1" Grid.Row="3" Click="Click_avtor" Name="Button_avtorization" FontFamily="Comic Sans MS" FontSize="25"  Background="#FFCC6600" HorizontalAlignment="Center" Content="Авторизоваться" VerticalAlignment="Top" />
+        <Button  Grid.Column="1" Grid.Row="3" Click="Click_katalog" Name="Button_katalog" FontFamily="Comic Sans MS" FontSize="25"  Background="#FFCC6600" HorizontalAlignment="Center" Content="Каталог" VerticalAlignment="Bottom" Width="200" />
+    </Grid>
+</Window>
